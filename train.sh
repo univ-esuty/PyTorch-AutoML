@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=0 python train.py -m "model.id=choice(0, 1, 2, 3, 4, 5, 6, 7, 8, 9)" "optimizer.learning_rate=choice(0.001, 0.0005, 0.0001, 0.00005)" "optimizer.betas=choice([0.9,0.99],[0.9,0.999], [0.99, 0.999])" "optimizer.weight_decay=choice(0, 0.0005, 0.001, 0.005)"

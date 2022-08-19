@@ -1,0 +1,6 @@
+data: /home/user/data/google-fonts-imgs/alphabet-caps-classified-split/test
+batch_size: 64
+
+model:
+  id: 3
+  weight_path: './mlruns/0/best-xxxxx.t7'
