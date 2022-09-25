@@ -70,6 +70,8 @@ def compose_net(model_cfg: OmegaConf):
                     'nvidia_efficientnet_widese_b4', pretrained=False),
     ]
     
+    OUTPUT_SIZE = 26
+    
     net = MODEL_LIST[model_cfg.id]
     if model_cfg.id >= 0 and model_cfg.id <= 1:
         net.classifier = nn.Sequential(
@@ -79,12 +81,12 @@ def compose_net(model_cfg: OmegaConf):
             nn.Linear(4096, 4096),
             nn.ReLU(True),
             nn.Dropout(p=0.5, inplace=False),
-            nn.Linear(4096, 26),
+            nn.Linear(4096, OUTPUT_SIZE),
         )
     elif model_cfg.id >= 2 and model_cfg.id <= 6:
-        net.fc = torch.nn.Linear(net.fc.in_features, 26)
+        net.fc = torch.nn.Linear(net.fc.in_features, OUTPUT_SIZE)
     elif model_cfg.id >= 7 and model_cfg.id <= 9:
-        net.classifier.fc = torch.nn.Linear(net.classifier.fc.in_features, 26)
+        net.classifier.fc = torch.nn.Linear(net.classifier.fc.in_features, OUTPUT_SIZE)
     print(net)
     
     return net
