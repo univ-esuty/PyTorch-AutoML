@@ -3,7 +3,7 @@ import os
 import random
 import shutil
 
-rootdir = '/home/user/data/google-fonts-imgs/alphabet-caps-classified'
+rootdir = '/path/to/dataset-root-dir'
 os.mkdir(f'{rootdir}-split')
 os.mkdir(f'{rootdir}-split/train')
 os.mkdir(f'{rootdir}-split/test')
