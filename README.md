@@ -81,7 +81,7 @@ Pre-trained model is available on PyTorch hub.
 ## Experiment results.
 ![result](results/res.png)
   
-Confusion matrix of classification result by ResNet34.
+Confusion matrix of classification result by ResNet34.  
 ![matrix](results/mat.png)
   
   
