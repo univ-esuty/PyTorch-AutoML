@@ -74,7 +74,7 @@ Following 10 models are automatically selected in the training sequence.
 - EfficientNet-B4
 - EfficientNet-B4-wide
   
-Pre-trained model is available on PyTorch hub.  
+Pre-trained models are available on the PyTorch hub.  
   
   
   
