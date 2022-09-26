@@ -79,10 +79,10 @@ Pre-trained model is available on PyTorch hub.
   
   
 ## Experiment results.
-![result]{results/res.png}
+![result](results/res.png)
   
 Confusion matrix of classification result by ResNet34.
-![matrix]{results/mat.png}
+![matrix](results/mat.png)
   
   
   
