@@ -2,7 +2,7 @@ defaults:
   - override hydra/sweeper: optuna
 
 ## Training h-parameters
-data: /home/user/data/google-fonts-imgs/alphabet-caps-classified-split/train
+data: /path/to/train_data_dir
 batch_size: 64
 epochs: 100
 eary_stop: 10
@@ -29,4 +29,4 @@ hydra:
 
 ## mlflow settings
 mlflow:
-  exp_name: Alphabet-Classification
+  exp_name: EXP001-2022xxxx
